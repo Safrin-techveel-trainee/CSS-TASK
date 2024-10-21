@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 1</title>
+<style>
+    body{       
+        background-color: rgb(70, 13, 13);
+        margin: 0;
+    }
+    .container{
+        margin: 150px 0 0 10% ;
+        width: 900px;
+    }
+    header{
+       color: white;
+       margin: 15px 0;
+      
+    }
+    h1,p{
+        margin: 0;
+    }
+    p{
+        width: 40%;
+    }
+    input[type=email]{
+        width: 30%;
+        padding: 1%;
+    }
+    textarea{
+        width: 30%;
+        padding: 1%;
+    }
+   
+    button{
+        width: 32%;
+        padding: 1%;
+        background-color: rgb(250, 154, 28);
+        color: white;
+        border: 0;
+        border-radius: 3%;
+    }
+
+    
+    
+</style>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>We Want to Know...</h1>
+            <p> Use this to encourage to people to share feedback,leave 
+            a testimonial,or answer any sort of fun question.
+            </p>
+        </header>
+        <form>      
+            <label for="email"></label>
+            <input id="email" type="email" name="Email" placeholder="Email"><br><br>
+            <label for="feedback"></label>
+            <textarea id="feedback" rows="3" cols="30" placeholder="Add your feedback here..."></textarea><br><br>
+            <button> "Answer Know!"</button>
+        </form>   
+    </div>
 </body>
 </html>
