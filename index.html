@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>position 1</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            border: solid 1px grey;
+            height: 200px;
+            width: 350px;
+            position: relative;
+        }
+
+        .thumnail {
+            background-image: url("../img 3.jpg");
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+        }
+
+        .time-detail {
+            color: white;
+            background-color: black;
+            padding: 2px 5px;
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">4:00</p>
+        </section>
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">5:00</p>
+        </section>
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">6:00</p>
+        </section>
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">7:00</p>
+        </section>
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">8:00</p>
+        </section>
+        <section>
+            <div class="thumnail">
+            </div>
+            <p class="time-detail">9:00</p>
+        </section>
+    </div>
 </body>
+
 </html>
