@@ -1,11 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document 11</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        header ul {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 50px;
+            list-style: none;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid 3px black;
+            padding: 0 10px;
+        }
+
+        .s-1 {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(250, 244, 244);
+            padding: 30px;
+
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        p {
+            word-spacing: 5px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 30px;
+
+        }
+
+        .all-products {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product {
+            width: 325px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        img {
+            width: 350px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        h2 {
+            border: none;
+        }
+
+        .para {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        button {
+            
+            margin-top: 30px;
+            padding: 18px;
+            border-radius: 30px;
+            color: white;
+            background-color: orange;
+            border: none;
+        }
+
+        .last-list {
+            color: white;
+            background-color: black;
+            padding: 30px;
+
+        }
+        .last-list ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap:40px;
+            align-items: center;
+        }
+        h3 {
+            color: rgb(255, 187, 0);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div>
+                <h2>Honest Reviews</h2>
+            </div>
+            <ul>
+                <li>Cameras</li>
+                <li>Computers</li>
+                <li>Gadgets</li>
+                <li>Contact</li>
+            </ul>
+        </header>
+        <div class="s-1">
+            <h1>Latest Product Reviews</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorem sapiente debitis itaque. <br> voluptatem necessitatibus facere sed..Amet aliquid a eum fuga quia
+                quisquam
+                perspiciatis repudiandae provident <br> culpas.</p>
+
+            <div class="all-products">
+                <div class="product">
+                    <img src="./phone.jpg">
+                    <div class="product-info">
+                        <h3>January 18 , 2024</h3>
+                        <h2>Poco F6 Review</h2>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam
+                            temporibus asperiores, magnam alias quia at id amet, voluptas, </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./laptop.jpg">
+                    <div class="product-info">
+                        <h3>January 18 , 2024</h3>
+                        <h2>The Best Laptops</h2>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam
+                            temporibus asperiores, magnam alias quia at id amet, voluptas, </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./camera.jpg">
+                    <div class="product-info">
+                        <h3>January 18 , 2024</h3>
+                        <h2>Camera Review</h2>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam
+                            temporibus asperiores, magnam alias quia at id amet, voluptas, </p>
+                    </div>
+                </div>
+            </div>
+            <button>View All Reviews </button>
+        </div>
+
+        <div class="last-list">
+            <ul>
+                <li>Read the Reviews</li>
+                <li>Share Your Reviews</li>
+                <li>Support and Contact</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
