@@ -3,9 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 5</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            min-height: 100vh;
+            width: 100vw;
+        }
+        .heading{
+            background-color: rgb(189, 247, 240);
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            justify-content: space-around; 
+            
+        }
+        ul{
+            flex-wrap: wrap;
+            display: flex;
+            gap: 50px;
+            align-items:center;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .main-section1{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .main-head{
+            flex-shrink: 0;
+            margin-left: 50px;
+            padding: 150px 0 0 0 ;
+            
+        }
+        h1{
+            color: rgb(3, 3, 209);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            word-spacing: 1px;
+        }
+        .img-2{
+            /* flex-grow: 1; */
+            order:0;
+        }
+        .main-section2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+        }
+        .img-3{
+            width: 600px;
+            height: 400px;
+        }
+        .main-div{
+            margin-right: 60px;  
+        }
+        .about{
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .para{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(85, 85, 85);
+            line-height: 25px;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+        .img-last{
+           height: 100px;
+           width: 100px;
+        }
+        .last-1{
+            margin: auto;
+            margin-left: 180px;
+        }
+        h3{
+            margin-left: 150px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .last-2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+            margin-right: 450px;
+        }
+</style>
 </head>
 <body>
-    
+    <div class="container">
+        <section class="heading">
+               <img  class="img-1" src="../image/techveel_logo.jpg">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>services</li>
+                <li>Courses</li>
+                <li>Testimonials</li>
+                <li>Collaborators</li>
+                <li>Gallery</li>
+            </ul>
+        </section>
+        <section class="main-section1">
+            <div class="main-head">
+                <h1>Build Tomorrow  ,</h1>
+                <h4>Code by Code : Mastering Full Stack Development.</h4>
+                <p>Techveel acts as a bridge between employersand students. It provides a <br>skill-development environment in major programming language. </p>
+            </div>  
+            <div class="img-2">
+                <img src="../image/image 1.jpg">
+            </div>
+        </section>
+        <section class="main-section2" >
+                <img class="img-3" src="../image/image2.jpg" >
+            <div class="main-div">
+                <h4 class="about">ABOUT US</h4>
+                <h2>We Are Here For Technical <br>Skill Development</h2>
+            <div class="para">
+                <p style="font-size: 14px;">Techveel acts as a bridge between employersand students. It provides a skill-development <br>environment in major programming language.</p>
+                <p>It is a brand of ASK IT SOLUTION, started in 2020 amid the pandemic as a subsidiary of ASK<br>TECHNOLOGY an ERP solutions provider with a reputation spanning more than 15 years.</p>
+            </div>
+            </div>
+        </section>
+        <footer class="last">
+            <div class="last-1">
+                <img class="img-last" src="../image/techveel_logo.jpg" >
+                <p>Techveel acts as a bridge between employers and<br>students. It provides a skill-development environment <br>in major programming language.</p>
+            </div>
+            <div>
+                <h3>Links</h3>
+                <ul class="last-2">
+                    <li>About</li>
+                    <li>services</li>
+                    <li>Technolgy</li>
+                    <li>Testimonials</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            </footer>
+    </div>
 </body>
 </html>
