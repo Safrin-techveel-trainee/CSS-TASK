@@ -4,8 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* width: 100%; */
+            min-height: 100vh;
+            background: linear-gradient(to right,rgb(57, 57, 233),rgb(3, 3, 138));
+        }
+        .heading{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+
+        }
+        span{
+            color: rgb(145, 2, 2);
+            font-size: 30px;
+        }
+        .sp1{
+            color: white;
+            font-size: 20px;
+        }
+        ul{
+            color: white;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            flex-direction: row;
+
+        }
+        ul li ul.dropdown li{
+            display: block;
+            padding: 6px 17px;
+        }
+        ul li ul.dropdown{
+            background: linear-gradient(to right,rgb(57, 57, 233),rgb(3, 3, 138));
+            position: absolute;
+            border-radius: 5px;
+            z-index: 999;
+            display: none;
+        }
+        ul li:hover{
+            color: gray;
+        }
+        ul li:hover ul.dropdown{
+            display: block;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            background-color: rgb(247, 61, 92);
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: rgb(255, 187, 198);
+            color: rgb(247, 61, 92);
+            transition: 1.5s 1s;
+            cursor: pointer
+        }
+        .content{
+            display: flex;
+            padding: 30px 40px;
+            gap:40px;
+        }
+        .image-div{
+            /* flex: 0 1 200px; */
+            /* max-width: 300px; */
+            display: block;
+            margin: auto;
+        }
+        .image-div img{
+            width:100%;
+            max-width: 400px;
+        }
+        .main-div{
+            max-width:420px;
+       }
+        .main-div h1{
+            font-size: 30px;
+            color: white;
+        }
+        .main-div h5{
+            padding-bottom: 20px;
+            padding-top: 6px;
+            color: white;
+        }
+        /* footer{
+            width: 80%;
+            display: grid;
+            grid-area: 3 2;
+            padding: 30px 0 0 150px;
+        } */
+        .foot{
+            display: grid;
+            color: white;
+            grid-template-columns: repeat(6,120px);
+            justify-content: center;
+        }
+        .f1 img{
+            width: 50px;
+        }
+        .f2 img{
+            width: 50px;
+        }
+        .f3 img{
+            width: 50px;
+        }
+        @media screen and (width<=800px){
+            .heading,.heading > ul{
+                align-items: start;
+                flex-direction: column;
+            }
+            .heading{
+                gap:40px;
+            }
+            .content{
+                flex-direction: column;
+            }
+            .main-div{
+                order: 2;
+                text-align: center;
+                margin: auto;
+            }
+            .image-div{
+                order:1;
+            }
+            .foot{
+                grid-template-columns: repeat(3,150px);
+            }
+
+        }
+        @media screen and (width<500px){
+            .foot{
+                grid-template-columns: repeat(2,120px);
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="heading">
+            <h4><span><em>A</em></span><span class="sp1">LENO</span></h4>
+            <ul>
+                <li>WHAT WE DO
+                    <ul class="dropdown">
+                        <li>HOME</li>
+                        <li>INVERSE</li>
+                        <li>EDUCATE</li>
+                        <li>LEARN</li>
+                        <li>LOYAL</li>
+                        <li>TRUST</li>
+                    </ul>
+                </li>
+                <li>BLOG</li>
+                <li>PODCAST</li>
+                <li>CAREERS</li>
+            </ul>
+            <BUtton>WORK WITH US</BUtton>
+        </div>
+        <div class="content">
+            <div class="main-div">
+                <h1>Unlock Your Business Potential With Facebook & Instagram Advertising</h1>
+                <h5>Facebook Premier Level Partner Agency</h5>
+                <button>WORK WITH US</button>
+            </div>
+            <div class="image-div">
+                <img src="../blog.jpg">
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="f1">
+                    <img src="../facebook.jpg">
+                    <p>Marketing Partner</p><br>
+                    <p>Facebook<br> Premier Level<br> Agency Partner</p>
+                </div>
+                <div class="f2">
+                    <img src="../google partner.png">
+                    <p>Google <br>Endorsod<br> Marketing<br> Partner</p>
+                </div>
+                <div class="f3">
+                    <img src="../member.jpg">
+                    <p>Fouier Agency<br> Council<br> Member</p>
+                </div>
+                <div class="f4">
+                    <h2>INC.<br>5000</h2>
+                    <p>Inc.5000<br> Fastest Growing <br>Company</p>
+                </div>
+                <div class="f5">
+                    <h2>$100M</h2>
+                    <p>In Annual <br>Digital Ad <br>Spend</p>
+                </div>
+                <div class="f6">
+                    <h2>15+</h2>
+                    <p>Years of<br> Facebook<br> Advertising <br>Experiance</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
