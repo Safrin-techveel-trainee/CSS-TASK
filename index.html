@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            background-color: aqua;
+        }
+        header,h1{
+            color: sandybrown; /*multiple selector */
+        }
+        header>p{
+            font-size: 20px;     /*child*/
+        }
+        section ul{
+            color: blue;        /*descendant selector*/
+        }
+        header+p{
+            color: rgb(138, 19, 134);           /*Adjacent selector*/
+        }
+        header~section{
+            color: rgb(10, 92, 92);          /*sibling selector*/
+        }
+        /* *{
+            color: brown;                    /*universal selector
+        } */
+        input[type="text"]{
+            padding: 10px;
+            border-radius: 5px;                 /*attribute selector*/
+         }
+        p::first-letter{
+            color:rgb(247, 79, 12);
+            font-size: 20px;
+        }
+        header>p::first-line{
+            color: yellow;
+        }
+        p::selection{
+           background-color: yellow;
+           color: red;
+        }
+        h1::after{
+           content: '$';
+        }
+        h1::before{
+            content: '%';
+        }
+        p:hover{
+          background-color: rgb(56, 148, 172);  
+        }
+        li:active{
+           color: tomato; 
+           pointer-events: painted;
+        }
+        h1:focus{
+            color:rgb(99, 243, 15) ;
+        }
+        li:nth-child(n+2){
+            color: rgb(243, 207, 0);
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus sequi nostrum quaerat
+                 incidunt quibusdam error. Magnam iure ipsam, laborum placeat rem 
+                 sint provident! Laborum incidunt minima iste autem aliquid.</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id quia distinctio repellendus. Vel, mollitia? Laboriosam perspiciatis facilis ratione totam aut, voluptatem cumque. Et minus nulla voluptates ab eum fugiat!</p>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In beatae obcaecati ratione harum a 
+                reprehenderit dignissimos error, labore sapiente necessitatibus animi numquam ullam, porro 
+                soluta quam quasi nihil illum libero qui deserunt! Autem cum cupiditate quis eius dicta sit 
+                repudiandae tempore a sequi, numquam officia exercitationem dolor iure voluptate, perspiciatis eaque nulla maxime animi odit quia. Labore provident dignissimos distinctio ab. In quae inventore quaerat sunt unde eligendi nemo iure qui labore rerum distinctio provident impedit laboriosam quidem harum voluptatum consectetur minus facilis natus, aspernatur deserunt numquam corrupti! Possimus, adipisci autem nesciunt atque labore soluta quasi incidunt consequuntur est modi inventore dolor molestiae corporis laudantium nulla, magni repellat exercitationem aliquid ea suscipit eveniet perferendis quas ipsam. Mollitia nobis maxime facilis explicabo! Expedita, quam ex tempore qui minus magni facilis recusandae corrupti obcaecati ipsam reiciendis fuga distinctio nam debitis natus est voluptatum praesentium dolore corporis, repudiandae magnam tempora quidem! Iusto natus quis, beatae maiores iste officia odit labore modi dolor delectus, nam quas doloremque laborum dolores similique dignissimos ad corporis obcaecati excepturi eos assumenda? Mollitia vel tempora, provident corporis eveniet dolorem ullam est ut ipsum? Tempore
+                 atque vitae sint itaque ex inventore veritatis voluptatibus dolorum, quam corporis quis culpa, corrupti quae?</p>
+            <ul>
+                <li>hi</li>
+                <li>hello</li>
+                <li>thank</li>
+                <li>five</li>
+            </ul>
+            <h2>css</h2>
+            <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        </section>
+        
+    </div>
+
 </body>
 </html>
