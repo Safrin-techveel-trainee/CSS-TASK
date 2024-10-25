@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 6</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            max-width: 800px;
+            min-width: 300px;
+            margin: auto;
+        } 
+        .para{
+            margin: auto;
+            padding:50px;
+        }
+        button{
+            border: none;
+            border-radius: 20px;
+            padding: 12px;
+            background-color: rgb(245, 54, 63);
+            color: white;
+        }
+        .images{
+            display: grid;
+           
+        }
+        @media screen and (max-width:650px) {
+			.para {
+				order: 2;
+			}
+            .images{
+                order: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="para">
+            <h2>Connect with Nature</h2><hr>
+            <p>Immerse Yourself in the serenity of nature with our guided<br>hiking tours. From majestic mountains to tranquil valleys,<br>discover the beauty of the outdoors and reconnect with <br>nature. </p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="images">
+           <img width=200px src="../natural images/img 1.jpg">
+           <img width=200px src="../natural images/img 2.jpg">
+           <img width=230px src="../natural images/img 3.jpg">
+           <img width=230px src="../natural images/img 4.jpg">
+        </div>
+    </div>
 </body>
 </html>
