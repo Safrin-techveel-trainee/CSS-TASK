@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 5</title>
+    <style>
+        .container {
+            background-color: rgb(188, 229, 243);
+        }
+
+        table {
+            margin: auto;
+            width: 700px;
+            table-layout: fixed;
+            margin-top: 180px;
+            border: 2px solid white;
+            border-collapse: collapse;
+            border-spacing: 0;
+            vertical-align: middle;
+
+        }
+        tr{
+            border-top: solid lightblue ;
+        }
+        th {
+
+            padding: 10px 5px;
+            background-color: white;
+            border: 2px solid white;
+            text-align: start;
+        }
+        img{
+            width:30px;
+        }
+        td {
+            padding: 10px 5px;
+            background-color: white;
+
+        }
+        .cancel{
+            font-size: 10px;
+            color: red;
+            text-transform: lowercase;
+        }
+        .status-active{
+            background-color:rgb(32, 150, 32);
+            width:fit-content;
+            color:white;
+            padding: 1px 4px;
+            border-radius: 20px;
+        }
+        .status-waiting{
+            background-color:rgb(230, 16, 16);
+            width:fit-content;
+            color:white;
+            padding: 1px 4px;
+            border-radius: 20px
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="container">
+    <div>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:20px"> </th>
+                        <th style="width:40px">Email </th>
+                        <th></th>
+                       
+                        <th style="width:100px">Username</th>
+                        <th style="width:200px">Status</th>
+                        <th style="width:20px"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+                        <td><img src="./images/boy.png" alt="retry"></td>
+                        <td>markotto@email.com</td>
+                        <td>Markotto89</td>
+                        <td><div class="status-active">Active</div></td>
+                        <td class="cancel">X</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+                        <td><img src="./images/boy.png" alt="retry"></td>
+                        <td>jacobthornton@email.com</td>
+                        <td>jacobthornton</td>
+                        <td><div class="status-waiting">Waiting for Reassignment</div></td>
+                        <td class="cancel">X</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+                        <td><img src="./images/girl.png" alt="retry"></td>
+                        <td>larrybird@email.com</td>
+                        <td>larry_bird</td>
+                        <td><div class="status-active">Active</div></td>
+                        <td class="cancel">X</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+                        <td><img src="../images/boy.png" alt="retry"></td>
+                        <td>johndoe@email.com</td>
+                        <td>Johndoe1990</td>
+                        <td><div class="status-active">Active</div></td>
+                        <td class="cancel">X</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox">
+
+                        </td>
+                        <td><img src="./images/girl.png" alt="retry"></td>
+                        <td>garybird@email.com</td>
+                        <td>Garybird_2020</td>
+                        <td><div class="status-waiting">Waiting for Reassignment</div></td>
+                        <td class="cancel">X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
 </body>
+
 </html>
