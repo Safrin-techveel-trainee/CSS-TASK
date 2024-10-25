@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .loading{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .line-box{
+            padding: 5px;
+            width: 60%;
+            height: 20px;
+            border: solid 2px blue;
+            border-radius: 20px;
+            transform: translate(25px,25px);
+        }
+        .text{
+            padding-top: 20px;
+        }
+        .line{
+            border-radius: 10px;
+            padding: 3px;
+            background: blue;
+            animation: loading 2s forwards infinite;
+        }
+        @keyframes loading{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        .spin{
+            padding-top: 70px;
+        }
+        .spinning{
+            position: relative;
+            top: 30px;
+            left:600px;
+            width: 50px;
+            height: 50px;
+            border: 5px solid slategray;
+            border-top-color:black;
+            border-radius: 50%;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .dot-ld{
+            padding-top: 70px;
+        }
+        .dotting{
+            position: relative;
+            top: 30px;
+            left:600px;
+            border: solid 1px none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(136, 200, 252);
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            gap: 5px;
+        }
+         .ani-dot{
+            border: 4px solid white;
+            border-radius: 50%;
+            animation: dotting 1s ease-in alternate infinite;
+        }
+        .ani-dot:nth-child(1){
+            animation-delay: .6s;
+        }
+        .ani-dot:nth-child(2){
+            animation-delay: .3s;
+        }
+        @keyframes dotting{
+            0%{
+                transform: scale(.75);
+            }
+            100%{
+                transform: scale(1.75);
+            }
+        } 
+        .whatsapp-icon{
+			width:60px;
+			position: fixed;
+			bottom: 30px;
+			right: 20px;
+			border-radius: 50%;	
+			animation: animate 2s infinite ;
+		}
+        .whatsapp-icon img{
+            width: 100%;
+        }
+		@keyframes animate{
+			from{
+				outline:none rgb(26, 235, 26);
+			}
+			to{
+			
+				outline:solid 10px rgba(185, 233, 185,0); 
+			}
+		}
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="text">
+             <h1>Loading Bar</h1>
+        </div>
+        <div class="loading">
+            <div class="line-box">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+        <div class="spin">
+            <h1>Spinner</h1>
+        </div>
+           <div class="spinning"></div>
+        <div class="dot-ld">
+            <h1>Dot Loading</h1>
+        </div>
+        <div class="dotting">
+            <span class="ani-dot"></span>
+            <span class="ani-dot"></span>
+            <span class="ani-dot"></span>
+        </div>
+        <div class="whatsapp-icon">
+            <img  src="../WhatsApp-Logo.png" />
+            <!-- <img  width=50% src=""> -->
+        </div>
+    </div>
 </body>
 </html>
