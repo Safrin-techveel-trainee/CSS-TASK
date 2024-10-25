@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>task 7</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            height: 500px;
+            background-image: url("../food.jpg");
+            background-repeat: no-repeat;
+            border: solid 1px transparent;
+            background-position: center;
+            background-size: cover;
+        }
+        .heading{
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        button{
+            border: solid 2px white;
+            border-radius: 18px;
+            background-color: transparent;
+            color: white;
+            padding: 10px;      
+        }
+        .s-1{
+            color: white;
+            position: relative;
+            top: 70px;
+            left: 50px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .search-box{
+            width: 50%;
+            position: relative;
+            top: 70px;
+            left: 50px;
+        }
+        input[type="text"]{
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: solid 3px white;
+            background-color: transparent;
+            border-radius: 50px;
+        }
+        .s-2{
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(172, 167, 167);
+            
+        }
+        .im-2{
+            width: 200px;
+            height: 262px;
+            display: flex;
+            gap: 5px;
+            margin-left: 280px;
+        }
+
+        .last{
+            background-color: rgb(20, 151, 20);
+            text-align: center;
+            padding: 50px;
+            
+        }
+        .fs{
+            position: relative;
+            top: 190px;
+            right: 180px;
+            color: white;
+           
+        }
+        .d{
+            position: relative;
+            top: 190px;
+            right: 180px;
+            color: white;  
+        }
+        .b{
+            position: relative;
+            top: 200px;
+            right: 180px;
+            color: white;
+        }
+        .whatsapp-icon{
+            width: 80px;
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			border-radius: 50%;	
+           
+		}
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+       
+        <div class="heading">
+            <h2>Brand</h2>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Recipes</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Shop</li>
+            </ul>
+        </div>
+        <div>
+            <button>login</button>
+        </div>
+        </div>
+        <div class="s-1">
+            <h1>It is even better than an <br>expensive cookery book</h1>
+            <p>Learn how to make you favorite restaurant's dishes</p>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search..">
+            <i class='fas fa-search'></i>
+        </div>
+        
+    </div>
+    <section class="s-2">
+        <h2>Main Course</h2>
+        <p>Excepteur sint occaecat cupidatat non qui<br> proident, sunt culpa qui officia deserunmollit<br> anim id est laborum. </p>
+        <div class="im-2">
+                <img src="../i1.jpg">
+                <h3 class="fs">Fruit Salad</h3>
+                <img src="../i2.jpg">
+                <h3 class="d">Desert</h3>
+                <img src="../i3.jpg">
+                <h3 class="b">Burger</h3>
+        </div>
+    </section>
+    <section>
+        <div class="last">
+           <p>FOODHUB THEME BY MODELTHEME<br> ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="whatsapp-icon">
+        <img  width=50% src="../wa.png">
+    </div>
+    </section>
 </body>
 </html>
